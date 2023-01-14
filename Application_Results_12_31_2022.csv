@@ -1,0 +1,274 @@
+,Date_Applied,Result,DOW,year_month,Broad_Role
+0,2022-08-09,Rejected,Tuesday,2022-08,Other
+1,2022-08-09,Rejected,Tuesday,2022-08,Data Scientist
+2,2022-08-09,No Response,Tuesday,2022-08,Data Analyst
+3,2022-08-09,No Response,Tuesday,2022-08,Data Scientist
+4,2022-08-09,No Response,Tuesday,2022-08,Data Scientist
+5,2022-08-09,Rejected,Tuesday,2022-08,Data Scientist
+6,2022-08-09,Rejected,Tuesday,2022-08,Data Engineer
+7,2022-08-09,No Response,Tuesday,2022-08,Data Scientist
+8,2022-08-10,No Response,Wednesday,2022-08,Data Scientist
+9,2022-08-10,No Response,Wednesday,2022-08,Data Scientist
+10,2022-08-10,No Response,Wednesday,2022-08,Data Scientist
+11,2022-08-10,No Response,Wednesday,2022-08,Data Scientist
+12,2022-08-10,Rejected,Wednesday,2022-08,Data Scientist
+13,2022-08-12,Rejected,Friday,2022-08,Data Scientist
+14,2022-08-12,Offer,Friday,2022-08,Data Engineer
+15,2022-08-12,No Response,Friday,2022-08,Data Scientist
+16,2022-08-15,No Response,Monday,2022-08,Data Scientist
+17,2022-08-17,Rejected,Wednesday,2022-08,Data Scientist
+18,2022-08-17,No Response,Wednesday,2022-08,Data Engineer
+19,2022-08-17,Rejected,Wednesday,2022-08,Data Analyst
+20,2022-08-17,Rejected,Wednesday,2022-08,Data Analyst
+21,2022-08-17,No Response,Wednesday,2022-08,Data Scientist
+22,2022-08-17,No Response,Wednesday,2022-08,Data Analyst
+23,2022-08-17,Rejected,Wednesday,2022-08,Data Scientist
+24,2022-08-18,No Response,Thursday,2022-08,ML Engineer
+25,2022-08-19,Rejected,Friday,2022-08,Data Analyst
+26,2022-08-22,No Response,Monday,2022-08,Data Analyst
+27,2022-08-22,Rejected,Monday,2022-08,Data Analyst
+28,2022-08-22,No Response,Monday,2022-08,Data Scientist
+29,2022-08-24,Contacted,Wednesday,2022-08,Data Scientist
+30,2022-08-24,No Response,Wednesday,2022-08,Data Scientist
+31,2022-08-24,Rejected,Wednesday,2022-08,Data Analyst
+32,2022-08-24,No Response,Wednesday,2022-08,Data Scientist
+33,2022-08-24,Rejected,Wednesday,2022-08,Data Scientist
+34,2022-08-24,Rejected,Wednesday,2022-08,Data Analyst
+35,2022-08-24,No Response,Wednesday,2022-08,ML Engineer
+36,2022-08-25,No Response,Thursday,2022-08,Data Scientist
+37,2022-08-25,No Response,Thursday,2022-08,Data Scientist
+38,2022-08-28,No Response,Sunday,2022-08,Data Analyst
+39,2022-08-28,No Response,Sunday,2022-08,Data Analyst
+40,2022-08-31,Rejected,Wednesday,2022-08,Data Scientist
+41,2022-08-31,No Response,Wednesday,2022-08,Data Analyst
+42,2022-08-31,No Response,Wednesday,2022-08,Data Analyst
+43,2022-08-31,Rejected,Wednesday,2022-08,Data Scientist
+44,2022-08-31,Rejected,Wednesday,2022-08,Data Analyst
+45,2022-08-31,No Response,Wednesday,2022-08,Data Scientist
+46,2022-08-31,No Response,Wednesday,2022-08,Data Scientist
+47,2022-08-31,Rejected,Wednesday,2022-08,Data Scientist
+48,2022-08-31,Rejected,Wednesday,2022-08,Other
+49,2022-08-31,No Response,Wednesday,2022-08,Data Scientist
+50,2022-08-31,No Response,Wednesday,2022-08,Data Scientist
+51,2022-08-31,No Response,Wednesday,2022-08,Data Scientist
+52,2022-09-01,No Response,Thursday,2022-09,Data Scientist
+53,2022-09-01,Rejected,Thursday,2022-09,Data Scientist
+54,2022-09-02,No Response,Friday,2022-09,Data Scientist
+55,2022-09-02,No Response,Friday,2022-09,Data Scientist
+56,2022-09-02,Rejected,Friday,2022-09,Data Scientist
+57,2022-09-04,Scam,Sunday,2022-09,Data Scientist
+58,2022-09-04,Rejected,Sunday,2022-09,Data Scientist
+59,2022-09-04,Rejected,Sunday,2022-09,Data Scientist
+60,2022-09-04,No Response,Sunday,2022-09,Data Scientist
+61,2022-09-05,No Response,Monday,2022-09,Data Scientist
+62,2022-09-05,Rejected,Monday,2022-09,Data Scientist
+63,2022-09-05,No Response,Monday,2022-09,Data Analyst
+64,2022-09-05,No Response,Monday,2022-09,Data Analyst
+65,2022-09-05,Rejected,Monday,2022-09,Data Scientist
+66,2022-09-05,Rejected,Monday,2022-09,Data Scientist
+67,2022-09-07,No Response,Wednesday,2022-09,Data Scientist
+68,2022-09-07,Rejected,Wednesday,2022-09,Data Scientist
+69,2022-09-07,First Interview,Wednesday,2022-09,Data Analyst
+70,2022-09-08,First Interview,Thursday,2022-09,ML Engineer
+71,2022-09-08,Rejected,Thursday,2022-09,Data Scientist
+72,2022-09-08,Rejected,Thursday,2022-09,Data Analyst
+73,2022-09-09,Rejected,Friday,2022-09,Other
+74,2022-09-09,Scam,Friday,2022-09,Data Analyst
+75,2022-09-14,Contacted,Wednesday,2022-09,Data Scientist
+76,2022-09-16,Rejected,Friday,2022-09,Data Scientist
+77,2022-09-17,No Response,Saturday,2022-09,Data Analyst
+78,2022-09-17,No Response,Saturday,2022-09,Data Scientist
+79,2022-09-17,Rejected,Saturday,2022-09,Data Scientist
+80,2022-09-25,No Response,Sunday,2022-09,Data Scientist
+81,2022-09-25,No Response,Sunday,2022-09,Data Scientist
+82,2022-09-27,No Response,Tuesday,2022-09,Data Scientist
+83,2022-09-27,No Response,Tuesday,2022-09,Data Scientist
+84,2022-09-27,No Response,Tuesday,2022-09,ML Engineer
+85,2022-09-27,No Response,Tuesday,2022-09,Data Scientist
+86,2022-09-27,No Response,Tuesday,2022-09,Data Analyst
+87,2022-09-27,Rejected,Tuesday,2022-09,Data Analyst
+88,2022-09-27,Rejected,Tuesday,2022-09,Data Analyst
+89,2022-09-27,Rejected,Tuesday,2022-09,Data Analyst
+90,2022-09-27,No Response,Tuesday,2022-09,Data Scientist
+91,2022-09-27,Rejected,Tuesday,2022-09,Data Analyst
+92,2022-09-27,Rejected,Tuesday,2022-09,Data Analyst
+93,2022-09-27,No Response,Tuesday,2022-09,Data Scientist
+94,2022-09-27,Rejected,Tuesday,2022-09,Data Scientist
+95,2022-09-27,Rejected,Tuesday,2022-09,Data Scientist
+96,2022-09-27,No Response,Tuesday,2022-09,Data Scientist
+97,2022-09-27,No Response,Tuesday,2022-09,Other
+98,2022-09-27,Rejected,Tuesday,2022-09,Data Scientist
+99,2022-09-28,Rejected,Wednesday,2022-09,Data Scientist
+100,2022-09-29,Rejected,Thursday,2022-09,Data Analyst
+101,2022-09-29,Rejected,Thursday,2022-09,Data Scientist
+102,2022-09-29,No Response,Thursday,2022-09,Data Analyst
+103,2022-09-29,No Response,Thursday,2022-09,Other
+104,2022-09-29,Rejected,Thursday,2022-09,Data Engineer
+105,2022-09-30,No Response,Friday,2022-09,Data Scientist
+106,2022-09-30,No Response,Friday,2022-09,Data Analyst
+107,2022-10-01,No Response,Saturday,2022-10,Data Analyst
+108,2022-10-01,Rejected,Saturday,2022-10,Data Engineer
+109,2022-10-02,Rejected,Sunday,2022-10,Data Analyst
+110,2022-10-02,No Response,Sunday,2022-10,Other
+111,2022-10-03,No Response,Monday,2022-10,Data Engineer
+112,2022-10-03,No Response,Monday,2022-10,Data Analyst
+113,2022-10-04,No Response,Tuesday,2022-10,Data Analyst
+114,2022-10-04,No Response,Tuesday,2022-10,Other
+115,2022-10-04,No Response,Tuesday,2022-10,Data Scientist
+116,2022-10-06,No Response,Thursday,2022-10,Data Analyst
+117,2022-10-06,No Response,Thursday,2022-10,Data Analyst
+118,2022-10-06,No Response,Thursday,2022-10,Data Scientist
+119,2022-10-06,Rejected,Thursday,2022-10,Data Scientist
+120,2022-10-06,Contacted,Thursday,2022-10,Data Analyst
+121,2022-10-06,First Interview,Thursday,2022-10,Data Analyst
+122,2022-10-07,No Response,Friday,2022-10,Data Engineer
+123,2022-10-07,No Response,Friday,2022-10,Data Analyst
+124,2022-10-07,No Response,Friday,2022-10,Data Analyst
+125,2022-10-07,No Response,Friday,2022-10,Data Scientist
+126,2022-10-07,No Response,Friday,2022-10,Data Scientist
+127,2022-10-07,Rejected,Friday,2022-10,Data Scientist
+128,2022-10-07,No Response,Friday,2022-10,Data Scientist
+129,2022-10-08,No Response,Saturday,2022-10,Data Scientist
+130,2022-10-10,No Response,Monday,2022-10,Data Analyst
+131,2022-10-11,No Response,Tuesday,2022-10,Data Analyst
+132,2022-10-11,Rejected,Tuesday,2022-10,Data Scientist
+133,2022-10-11,No Response,Tuesday,2022-10,Data Scientist
+134,2022-10-11,Rejected,Tuesday,2022-10,Data Scientist
+135,2022-10-11,No Response,Tuesday,2022-10,Data Analyst
+136,2022-10-11,No Response,Tuesday,2022-10,Data Analyst
+137,2022-10-11,No Response,Tuesday,2022-10,Data Scientist
+138,2022-10-11,No Response,Tuesday,2022-10,Data Scientist
+139,2022-10-13,No Response,Thursday,2022-10,Data Scientist
+140,2022-10-14,No Response,Friday,2022-10,Data Scientist
+141,2022-10-14,Rejected,Friday,2022-10,Data Analyst
+142,2022-10-15,No Response,Saturday,2022-10,Data Analyst
+143,2022-10-15,No Response,Saturday,2022-10,Data Analyst
+144,2022-10-15,No Response,Saturday,2022-10,Data Analyst
+145,2022-10-15,Rejected,Saturday,2022-10,Data Analyst
+146,2022-10-15,No Response,Saturday,2022-10,Data Analyst
+147,2022-10-15,First Interview,Saturday,2022-10,Data Analyst
+148,2022-10-15,No Response,Saturday,2022-10,Data Scientist
+149,2022-10-17,No Response,Monday,2022-10,Data Scientist
+150,2022-10-17,No Response,Monday,2022-10,ML Engineer
+151,2022-10-17,Rejected,Monday,2022-10,Data Scientist
+152,2022-10-17,No Response,Monday,2022-10,Data Scientist
+153,2022-10-18,Rejected,Tuesday,2022-10,Data Analyst
+154,2022-10-18,No Response,Tuesday,2022-10,Data Scientist
+155,2022-10-18,No Response,Tuesday,2022-10,Data Analyst
+156,2022-10-19,No Response,Wednesday,2022-10,Data Analyst
+157,2022-10-19,Rejected,Wednesday,2022-10,Data Scientist
+158,2022-10-19,Rejected,Wednesday,2022-10,Data Scientist
+159,2022-10-19,No Response,Wednesday,2022-10,Data Scientist
+160,2022-10-19,Rejected,Wednesday,2022-10,Data Analyst
+161,2022-10-19,Third Interview,Wednesday,2022-10,Data Scientist
+162,2022-10-19,No Response,Wednesday,2022-10,Data Analyst
+163,2022-10-20,Rejected,Thursday,2022-10,Data Scientist
+164,2022-10-20,First Interview,Thursday,2022-10,Data Analyst
+165,2022-10-21,No Response,Friday,2022-10,Data Scientist
+166,2022-10-23,Rejected,Sunday,2022-10,Data Engineer
+167,2022-10-23,No Response,Sunday,2022-10,Data Scientist
+168,2022-10-23,No Response,Sunday,2022-10,Data Analyst
+169,2022-10-25,No Response,Tuesday,2022-10,Data Analyst
+170,2022-10-25,No Response,Tuesday,2022-10,ML Engineer
+171,2022-10-31,Rejected,Monday,2022-10,Data Analyst
+172,2022-10-31,Rejected,Monday,2022-10,Data Analyst
+173,2022-10-31,Rejected,Monday,2022-10,Data Analyst
+174,2022-11-01,Rejected,Tuesday,2022-11,Data Analyst
+175,2022-11-01,Rejected,Tuesday,2022-11,Data Analyst
+176,2022-11-01,No Response,Tuesday,2022-11,Data Analyst
+177,2022-11-01,No Response,Tuesday,2022-11,ML Engineer
+178,2022-11-04,No Response,Friday,2022-11,Data Analyst
+179,2022-11-04,No Response,Friday,2022-11,Data Scientist
+180,2022-11-04,Rejected,Friday,2022-11,Data Analyst
+181,2022-11-04,No Response,Friday,2022-11,Data Scientist
+182,2022-11-04,No Response,Friday,2022-11,Data Analyst
+183,2022-11-04,No Response,Friday,2022-11,Data Scientist
+184,2022-11-07,First Interview,Monday,2022-11,Data Analyst
+185,2022-11-07,No Response,Monday,2022-11,Data Scientist
+186,2022-11-07,No Response,Monday,2022-11,Data Scientist
+187,2022-11-11,First Interview,Friday,2022-11,Data Analyst
+188,2022-11-11,No Response,Friday,2022-11,Data Scientist
+189,2022-11-11,No Response,Friday,2022-11,Data Scientist
+190,2022-11-11,Rejected,Friday,2022-11,Data Scientist
+191,2022-11-11,Rejected,Friday,2022-11,Data Analyst
+192,2022-11-11,No Response,Friday,2022-11,Data Scientist
+193,2022-11-11,Rejected,Friday,2022-11,ML Engineer
+194,2022-11-11,Rejected,Friday,2022-11,Data Analyst
+195,2022-11-12,No Response,Saturday,2022-11,Data Analyst
+196,2022-11-12,No Response,Saturday,2022-11,Data Scientist
+197,2022-11-12,Rejected,Saturday,2022-11,Data Scientist
+198,2022-11-15,No Response,Tuesday,2022-11,Data Scientist
+199,2022-11-15,Rejected,Tuesday,2022-11,Data Scientist
+200,2022-11-15,No Response,Tuesday,2022-11,Data Analyst
+201,2022-11-16,Rejected,Wednesday,2022-11,Other
+202,2022-11-16,No Response,Wednesday,2022-11,Data Scientist
+203,2022-11-16,No Response,Wednesday,2022-11,Data Analyst
+204,2022-11-16,Rejected,Wednesday,2022-11,Data Scientist
+205,2022-11-16,No Response,Wednesday,2022-11,Data Scientist
+206,2022-12-01,No Response,Thursday,2022-12,Data Analyst
+207,2022-12-01,Rejected,Thursday,2022-12,Data Scientist
+208,2022-12-01,No Response,Thursday,2022-12,Data Scientist
+209,2022-12-01,No Response,Thursday,2022-12,Data Analyst
+210,2022-12-02,No Response,Friday,2022-12,Data Scientist
+211,2022-12-02,No Response,Friday,2022-12,Data Scientist
+212,2022-12-02,Rejected,Friday,2022-12,Data Scientist
+213,2022-12-02,No Response,Friday,2022-12,Data Analyst
+214,2022-12-02,Third Interview,Friday,2022-12,Data Analyst
+215,2022-12-02,No Response,Friday,2022-12,Data Scientist
+216,2022-12-02,No Response,Friday,2022-12,Data Scientist
+217,2022-12-02,Rejected,Friday,2022-12,Data Scientist
+218,2022-12-02,Rejected,Friday,2022-12,Data Analyst
+219,2022-12-05,No Response,Monday,2022-12,Data Scientist
+220,2022-12-05,No Response,Monday,2022-12,Data Scientist
+221,2022-12-05,No Response,Monday,2022-12,Data Scientist
+222,2022-12-05,No Response,Monday,2022-12,Data Scientist
+223,2022-12-05,No Response,Monday,2022-12,Data Analyst
+224,2022-12-05,No Response,Monday,2022-12,Data Analyst
+225,2022-12-05,No Response,Monday,2022-12,Data Scientist
+226,2022-12-07,No Response,Wednesday,2022-12,Data Scientist
+227,2022-12-07,Rejected,Wednesday,2022-12,Data Scientist
+228,2022-12-07,No Response,Wednesday,2022-12,Data Analyst
+229,2022-12-09,No Response,Friday,2022-12,Data Scientist
+230,2022-12-09,No Response,Friday,2022-12,Data Scientist
+231,2022-12-09,No Response,Friday,2022-12,Data Analyst
+232,2022-12-09,Rejected,Friday,2022-12,Data Engineer
+233,2022-12-09,No Response,Friday,2022-12,Data Scientist
+234,2022-12-11,No Response,Sunday,2022-12,Data Scientist
+235,2022-12-11,No Response,Sunday,2022-12,Data Engineer
+236,2022-12-11,No Response,Sunday,2022-12,Data Engineer
+237,2022-12-11,Scam,Sunday,2022-12,Data Analyst
+238,2022-12-11,Rejected,Sunday,2022-12,Data Analyst
+239,2022-12-11,Rejected,Sunday,2022-12,Data Engineer
+240,2022-12-11,Rejected,Sunday,2022-12,Data Engineer
+241,2022-12-13,No Response,Tuesday,2022-12,Data Scientist
+242,2022-12-13,No Response,Tuesday,2022-12,Data Scientist
+243,2022-12-13,Rejected,Tuesday,2022-12,Other
+244,2022-12-14,No Response,Wednesday,2022-12,Data Scientist
+245,2022-12-14,No Response,Wednesday,2022-12,Data Scientist
+246,2022-12-14,No Response,Wednesday,2022-12,Data Scientist
+247,2022-12-14,No Response,Wednesday,2022-12,Data Analyst
+248,2022-12-14,No Response,Wednesday,2022-12,Data Analyst
+249,2022-12-15,No Response,Thursday,2022-12,Data Analyst
+250,2022-12-15,No Response,Thursday,2022-12,Other
+251,2022-12-15,No Response,Thursday,2022-12,Data Analyst
+252,2022-12-15,No Response,Thursday,2022-12,Data Engineer
+253,2022-12-16,No Response,Friday,2022-12,Data Analyst
+254,2022-12-16,No Response,Friday,2022-12,Data Analyst
+255,2022-12-16,No Response,Friday,2022-12,Data Scientist
+256,2022-12-16,No Response,Friday,2022-12,Data Scientist
+257,2022-12-16,No Response,Friday,2022-12,Data Scientist
+258,2022-12-17,No Response,Saturday,2022-12,Data Analyst
+259,2022-12-17,Rejected,Saturday,2022-12,Data Scientist
+260,2022-12-19,No Response,Monday,2022-12,Data Analyst
+261,2022-12-19,No Response,Monday,2022-12,Data Scientist
+262,2022-12-19,No Response,Monday,2022-12,Data Analyst
+263,2022-12-20,No Response,Tuesday,2022-12,Data Scientist
+264,2022-12-22,No Response,Thursday,2022-12,Data Analyst
+265,2022-12-22,No Response,Thursday,2022-12,Data Analyst
+266,2022-12-31,No Response,Saturday,2022-12,Other
+267,2022-12-31,No Response,Saturday,2022-12,Data Analyst
+268,2022-12-31,No Response,Saturday,2022-12,Data Analyst
+269,2022-12-31,No Response,Saturday,2022-12,Data Analyst
+270,2022-12-31,No Response,Saturday,2022-12,Data Analyst
+271,2022-12-31,No Response,Saturday,2022-12,Data Analyst
+272,2022-12-31,Scam,Saturday,2022-12,Data Analyst
