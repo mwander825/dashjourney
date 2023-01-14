@@ -247,33 +247,34 @@ app.layout = html.Div(children=[
 ])
 
 # callback decorator
-@app.callback(
-    Output('results-pie', 'figure'),
-    Input('pie-cats', 'value'))
-def update_pie(pie_category):   
-    pie_category = pie_category if pie_category is not None else "Overall"
-    
-    # default to overall if clearing the dropdown
-    if pie_category == "Overall":
-        fig = px.pie(df, values=df["Result"].value_counts(), names=df["Result"].value_counts().index,
-                color=df["Result"].value_counts().index,
-                color_discrete_map=result_colors,
-                hole=0.4) # donut
-    else:
-        pie_cat_df = df[df["Broad_Role"] == pie_category]
-    
-        fig = px.pie(pie_cat_df, values=pie_cat_df["Result"].value_counts(), names=pie_cat_df["Result"].value_counts().index,
-                color=pie_cat_df["Result"].value_counts().index,
-                color_discrete_map=result_colors,
-                hole=0.4) # donut
-    
-    # update text labels on pie slices
-    fig.update_traces(textinfo="value+percent", texttemplate="(%{value})<br>%{percent}")
-    
-    # update title
-    fig.update_layout(title=dict(text=f"{pie_category} Applications", xanchor="center", x=0.5), font=dict(size=12))
-    
-    return fig
+# callback not available for static page
+#@app.callback(
+#    Output('results-pie', 'figure'),
+#    Input('pie-cats', 'value'))
+#def update_pie(pie_category):   
+#    pie_category = pie_category if pie_category is not None else "Overall"
+#    
+#    # default to overall if clearing the dropdown
+#    if pie_category == "Overall":
+#        fig = px.pie(df, values=df["Result"].value_counts(), names=df["Result"].value_counts().index,
+#                color=df["Result"].value_counts().index,
+#                color_discrete_map=result_colors,
+#                hole=0.4) # donut
+#    else:
+#        pie_cat_df = df[df["Broad_Role"] == pie_category]
+#    
+#        fig = px.pie(pie_cat_df, values=pie_cat_df["Result"].value_counts(), names=pie_cat_df["Result"].value_counts().index,
+#                color=pie_cat_df["Result"].value_counts().index,
+#                color_discrete_map=result_colors,
+#                hole=0.4) # donut
+#    
+#    # update text labels on pie slices
+#    fig.update_traces(textinfo="value+percent", texttemplate="(%{value})<br>%{percent}")
+#    
+#    # update title
+#    fig.update_layout(title=dict(text=f"{pie_category} Applications", xanchor="center", x=0.5), font=dict(size=12))
+#    
+#    return fig
         
-if __name__ == '__main__':
-    app.run_server()
+#if __name__ == '__main__':
+#    app.run_server()
