@@ -31,7 +31,7 @@ result_colors = {
 }
 
 # read in data
-df = pd.read_csv("Application_Results_12_31_2022.csv", index_col=0)
+df = pd.read_csv("scratch/Application_Results_12_31_2022.csv", index_col=0)
 
 # vertical lines for time series
 resume_dates = ["2022-08-12", "2022-08-19", "2022-08-31", "2022-09-05"]
@@ -61,6 +61,8 @@ def create_role_fig(dff):
                 title="Application Results by Role Category"
                 )
     
+    role_group_fig.update_layout(plot_bgcolor=bg_color, paper_bgcolor=bg_color)
+    
     return role_group_fig, role_group_to_bar
     
 def create_time_series_fig(dff):    
@@ -71,7 +73,7 @@ def create_time_series_fig(dff):
 
     time_series_fig.add_scatter(x=date_count.cumsum().index, y=date_count.cumsum().values, name="Cumulative Count", fillcolor="orange", secondary_y=True)
 
-    time_series_fig.update_layout(yaxis_range=[date_count.min(),date_count.max()+1], title_text="Applications Over Time")
+    time_series_fig.update_layout(yaxis_range=[date_count.min(),date_count.max()+1], title_text="Applications Over Time",plot_bgcolor=bg_color, paper_bgcolor=bg_color)
     time_series_fig.update_yaxes(title_text="# of Applications Per Day", secondary_y=False)
     time_series_fig.update_yaxes(title_text="Cumulative # of Applications", secondary_y=True)
 
@@ -105,15 +107,52 @@ def create_time_series_fig(dff):
                          legendgroup="Application(s) Led to Offer",
                          showlegend=False if i > 0 else True))
     
+    
+    
     return time_series_fig
     
-def create_pie_fig(dff):  
+def create_pie_fig(dff, rgroup):  
+    cats = ["Overall"] + list(rgroup.index)
 
-    pie_fig = px.pie(dff, values=dff["Result"].value_counts(), names=dff["Result"].value_counts().index,
-                    color=dff["Result"].value_counts().index,
-                    color_discrete_map=result_colors)    
+    pie_fig = make_subplots(2, 3, subplot_titles=[cat + " Applications" for cat in cats], specs=[[{'type':'domain'}]*(len(cats) // 2), [{'type':'domain'}]*(len(cats) // 2)])
 
-    pie_fig.update_layout(title=dict(text="Overall Applications", xanchor="center", x=0.5), font=dict(size=12))
+    s = pd.Series(result_colors).drop("Total").reindex(rgroup.drop("Total", axis=1).columns)
+
+    i, j = 1, 1
+    for pie_category in cats:
+
+        pie_category = pie_category if pie_category is not None else "Overall"
+
+        if pie_category == "Overall":
+            pie_fig.add_trace(go.Pie(values=dff["Result"].value_counts(), 
+                        labels=dff["Result"].value_counts().index,
+                        marker=dict(colors=s.reindex(dff["Result"].value_counts().index)),
+                        scalegroup='one',
+                        hole=0.4,
+                        name=""), i, j) 
+        else:
+            pie_cat_dff = dff[dff["Broad_Role"] == pie_category]
+
+            pie_fig.add_trace(go.Pie(values=pie_cat_dff["Result"].value_counts(), 
+                    labels=pie_cat_dff["Result"].value_counts().index,
+                    scalegroup='one',
+                    marker=dict(colors=s.reindex(pie_cat_dff["Result"].value_counts().index)),
+                    hole=0.4,
+                    name=""), i, j) # donut
+
+        # update text labels on pie slices
+        pie_fig.update_traces(textinfo="value+percent", texttemplate="(%{value})<br>%{percent}")
+
+        i = i if j < 3 else 2
+        j = j + 1 if j < 3 else 1
+
+    pie_fig.update_layout(height=800, title_text='Overall Results of Applications', font=dict(size=10), plot_bgcolor=bg_color, paper_bgcolor=bg_color)
+    
+    #pie_fig = px.pie(dff, values=dff["Result"].value_counts(), names=dff["Result"].value_counts().index,
+    #                color=dff["Result"].value_counts().index,
+    #                color_discrete_map=result_colors)    
+
+    #pie_fig.update_layout(title=dict(text="Overall Applications", xanchor="center", x=0.5), font=dict(size=12))
 
     return pie_fig
     
@@ -134,6 +173,8 @@ def create_dow_fig(dff):
                             value="# of Applications"),
                 title="Application Results by Day of the Week"
                 )   
+    
+    dow_fig.update_layout(plot_bgcolor=bg_color, paper_bgcolor=bg_color)
     
     return dow_fig
 
@@ -158,12 +199,16 @@ def create_month_fig(dff):
     dtick="M1",
     tickformat="%b %Y")  
     
+    month_fig.update_layout(plot_bgcolor=bg_color, paper_bgcolor=bg_color)
+    
     return month_fig
 
-# use website .css?
-external_stylesheets = ['']
+# use background color from App.css
+bg_color = "#DDC3F8"
 
-app = Dash(__name__) #external_stylesheets=external_stylesheets)
+role_fig, role_group = create_role_fig(df)
+
+app = Dash(__name__)
 
 app.title = "Journey to an Entry-Level Job"  
 
@@ -175,7 +220,7 @@ app.layout = html.Div(children=[
         
         html.P("""bigman""")
     
-    ]),
+    ], className="page-container"),
     
     html.Div(children=[
         html.H2("""Examining Applications over Time"""),
@@ -187,7 +232,7 @@ app.layout = html.Div(children=[
             figure=create_time_series_fig(df)
         )
     
-    ]),
+    ], className="page-container"),
     
     html.Div(children=[
         html.H2("""Examining Applications by Month"""),
@@ -197,7 +242,7 @@ app.layout = html.Div(children=[
             id='month-groups',
             figure=create_month_fig(df)
         )
-    ]),
+    ], className="page-container"),
     
     html.Div(children=[
         html.H2("""Examining Applications by Days of the Week"""),
@@ -206,16 +251,16 @@ app.layout = html.Div(children=[
             id='dow-groups',
             figure=create_dow_fig(df)
         )
-    ]),
+    ], className="page-container"),
     
     html.Div(children=[
         html.H2("""Examining Applications by Role"""),
 
         dcc.Graph(
             id='role-groups',
-            figure=create_role_fig(df)[0]
+            figure=role_fig
         )
-    ]),
+    ], className="page-container"),
     
     html.Div(children=[
         html.H2("""Overall Results of Applications"""),
@@ -223,27 +268,28 @@ app.layout = html.Div(children=[
         html.P("""guy"""),
         
         
-        html.Div(children=[
-            html.H4("""Role Category Dropdown"""),
+        #html.Div(children=[
+        #    html.H4("""Role Category Dropdown"""),
 
-            dcc.Dropdown(
-                ["Overall"] + list(create_role_fig(df)[1].index),
-                'Overall',
-                id='pie-cats'
-            ),
+            #dcc.Dropdown(
+            #    ["Overall"] + list(role_group.index),
+            #    'Overall',
+            #    id='pie-cats'
+            #),
                         
-        ], style={'width': '25%'}),
+        #], style={'width': '25%'}),
         
         dcc.Graph(
             id='results-pie',
-            figure=create_pie_fig(df)
+            figure=create_pie_fig(df, role_group)
         )
-    ]),
+    ], className="page-container"),
+        
     html.Div(children=[
         html.H2("""In Conclusion..."""),
         
         html.P(""" """)
-    ])
+    ], className="page-container")
 ])
 
 # callback decorator
@@ -276,5 +322,5 @@ app.layout = html.Div(children=[
 #    
 #    return fig
         
-#if __name__ == '__main__':
-#    app.run_server()
+if __name__ == '__main__':
+    app.run_server()
