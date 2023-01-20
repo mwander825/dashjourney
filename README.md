@@ -1,1 +1,2 @@
-# dashjourney
+# Journey to an Entry-Level Job
+Some fun visualizations of job application result data. Testing and development was done in notebooks using matplotlib, and the final product uses static exports of plots made with dash and plotly.
