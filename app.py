@@ -206,6 +206,8 @@ def create_month_fig(dff):
 # use background color from App.css
 bg_color = "#DDC3F8"
 
+external_stylesheets = ["docs/app.css"]
+
 # figures
 role_fig, role_group = create_role_fig(df)
 time_series_fig = create_time_series_fig(df)

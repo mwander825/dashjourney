@@ -1,0 +1,54 @@
+#App {
+  position: relative;
+}
+
+body {
+  background-color: #DDC3F8;
+}
+
+.container {
+  color: black;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+header.title {
+  top: 0;
+  position: relative;
+  text-align: left;
+}
+
+.page-container {
+  height: auto;
+  width: auto;
+  margin-left: 5%;
+  margin-right: 5%;  
+  margin-top: 5%;
+}
+
+a.linkline {
+  text-decoration: none;   
+}
+
+a.linkline:visited {
+  color: green;  
+}
+
+.header {
+  color: black;
+  height: 20%;
+  width: 100%;
+  top: 0;
+  bottom: 10;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1;
+  position: sticky;
+}
+
+li {
+ padding-bottom: 2%;   
+}
