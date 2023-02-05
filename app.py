@@ -9,6 +9,9 @@ import pandas as pd
 import numpy as np
 from dateutil.parser import parse
 
+# results
+from scratch.create_dataframe import create_dataframe
+
 DOW_dict = {"Monday": 0,
            "Tuesday": 1,
            "Wednesday": 2,
@@ -29,6 +32,12 @@ result_colors = {
               "Offer": "lime",
               "Scam": "purple"
 }
+
+# update results
+try:
+    create_dataframe()
+except FileNotFoundError as e:
+    print(e)
 
 # read in data
 df = pd.read_csv("scratch/Application_Results_12_31_2022.csv", index_col=0)
@@ -114,7 +123,7 @@ def create_time_series_fig(dff):
 def create_pie_fig(dff, rgroup):  
     cats = ["Overall"] + list(rgroup.index)
 
-    pie_fig = make_subplots(2, 3, subplot_titles=[cat + " Applications" for cat in cats], specs=[[{'type':'domain'}]*(len(cats) // 2), [{'type':'domain'}]*(len(cats) // 2)])
+    pie_fig = make_subplots(2, 3, subplot_titles=[cat + " Applications" for cat in cats], specs=[[{'type':'domain'}]*(len(cats) // 2), [{'type':'domain'}]*(len(cats) // 2)], row_heights=[0.7, 0.3])
 
     s = pd.Series(result_colors).drop("Total").reindex(rgroup.drop("Total", axis=1).columns)
 
@@ -146,7 +155,7 @@ def create_pie_fig(dff, rgroup):
         i = i if j < 3 else 2
         j = j + 1 if j < 3 else 1
 
-    pie_fig.update_layout(height=850, title_text='Overall Results of Applications', font=dict(size=10), plot_bgcolor=bg_color, paper_bgcolor=bg_color)
+    pie_fig.update_layout(height=600, title_text='Overall Results of Applications', font=dict(size=10), plot_bgcolor=bg_color, paper_bgcolor=bg_color, margin=dict(b=0))
     
     #pie_fig = px.pie(dff, values=dff["Result"].value_counts(), names=dff["Result"].value_counts().index,
     #                color=dff["Result"].value_counts().index,
@@ -393,5 +402,5 @@ if output_static_figures:
     for fig, name in figs:
         fig.write_html("docs\\" + name + ".html")
 
-if __name__ == '__main__':
-    app.run_server()
+#if __name__ == '__main__':
+#    app.run_server()
